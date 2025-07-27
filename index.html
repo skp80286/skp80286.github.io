@@ -7,11 +7,11 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 700px;
+      max-width: 800px;
       margin: 40px auto;
-      text-align: center;
       color: #333;
       padding: 0 20px;
+      line-height: 1.6;
     }
     img {
       width: 180px;
@@ -19,19 +19,19 @@
       object-fit: cover;
       border-radius: 50%;
       border: 3px solid #555;
+      display: block;
+      margin: 0 auto;
     }
-    h1 {
-      font-size: 2.2em;
-      margin-top: 20px;
+    h1, h2 {
+      text-align: center;
     }
     p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      text-align: left;
+      font-size: 1.1em;
       margin-top: 20px;
     }
     .social {
-      margin-top: 30px;
+      text-align: center;
+      margin-top: 20px;
     }
     .social a {
       text-decoration: none;
@@ -42,16 +42,34 @@
     .social a:hover {
       color: #007acc;
     }
+    .section {
+      margin-top: 40px;
+    }
+    .paper {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border-left: 3px solid #007acc;
+      background: #f8f8f8;
+    }
+    .paper a {
+      color: #007acc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .paper a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <img src="sameer-photo-cropped.png" alt="Sameer Patil">
   <h1>Sameer Patil</h1>
-  
+
   <p>
     I am a technologist turned astrophysicist based in Navi Mumbai, India.<br><br>
     I am currently pursuing a PhD in Astrophysics at the <strong>Indian Institute of Technology (IIT) Bombay</strong> under the guidance of Prof. Varun Bhalerao, where I focus on high-energy transients, particularly <strong>gamma-ray bursts (GRBs)</strong>. Additionally, I collaborate with Prof. Girish Kulkarni at the <strong>Tata Institute of Fundamental Research (TIFR)</strong> on extracting intergalactic medium (IGM) properties from the 21-cm forest signal.<br><br>
     My work heavily involves applying AI/ML techniques to solve problems in astronomy, with particular interest in deep neural networks, CNNs, U-Nets, denoising, inference, and XGBoost.<br><br>
+
   </p>
   
   <div class="social">
@@ -59,6 +77,17 @@
     <a href="https://orcid.org/0009-0002-8110-0515" title="ORCID">🧬</a>
     <a href="https://github.com/skp80286" title="GitHub">🐙</a>
     <a href="mailto:25d1069@iitb.ac.in" title="Email">✉️</a>
+
+
+  <div class="section">
+    <h2>Research</h2>
+    <div class="paper">
+      <a href="https://arxiv.org/abs/2507.11611" target="_blank">
+        Efficient neutral-IGM inference from noisy 21-cm forest spectra with latent-space U-Net encoding and XGBoost
+      </a><br>
+      <small><strong>arXiv:2507.11611</strong> | July 2025</small><br>
+      This work presents a hybrid machine learning approach using U-Net latent encoding and XGBoost to efficiently infer the neutral fraction of the IGM from noisy simulated 21-cm forest spectra. It demonstrates robust performance even in low signal-to-noise regimes, offering a practical path toward real data inference from telescopes like SKA.
+    </div>
   </div>
 </body>
 </html>
