@@ -1,248 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260902-06-6f520ec","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sameer K. Patil — Astrophysicist</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sameer Patil - Home</title>
   <style>
-    :root {
-      --ink: #06111f;
-      --panel: #0d1b2d;
-      --panel-soft: #10243a;
-      --line: rgba(142, 193, 255, .16);
-      --cyan: #65c7ff;
-      --muted: #a8bdd0;
-    }
-
-    html { scroll-behavior: smooth; }
-
     body {
-      margin: 0;
-      font-family: "Source Serif Pro", serif;
-      color: #eef7ff;
-      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      color: #333;
+      padding: 0 20px;
+      line-height: 1.6;
     }
-
-    .page-shell {
-      width: 100%;
-      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
-      position: relative;
-      isolation: isolate;
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #555;
+      display: block;
+      margin: 0 auto;
     }
-
-    .page-shell::before {
-      content: "";
-      position: fixed;
-      z-index: -1;
-      inset: 0;
-      pointer-events: none;
-      opacity: .32;
-      background-image:
-        linear-gradient(rgba(136, 204, 255, .055) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(136, 204, 255, .055) 1px, transparent 1px);
-      background-size: 48px 48px;
-      mask-image: linear-gradient(to bottom, black, transparent 78%);
+    h1, h2 {
+      text-align: center;
     }
-
-    .mono { font-family: "Space Mono", monospace; }
-
-    .line-panel {
-      border: 1px solid var(--line);
-      box-shadow: 0 24px 72px rgba(0, 0, 0, .25);
+    p {
+      font-size: 1.1em;
+      margin-top: 20px;
     }
-
-    .nav-link {
-      color: #b9cce0;
-      transition: color 180ms ease;
+    .social {
+      text-align: center;
+      margin-top: 20px;
     }
-
-    .nav-link:hover { color: #ffffff; }
-
-    .action {
-      transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+    .social a {
+      text-decoration: none;
+      font-size: 1.5em;
+      margin: 0 10px;
+      color: #555;
     }
-
-    .action:hover {
-      transform: translateY(-2px);
-      filter: brightness(1.08);
+    .social a:hover {
+      color: #007acc;
     }
-
-    .publication-card {
-      transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+    .section {
+      margin-top: 40px;
     }
-
-    .publication-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(101, 199, 255, .56);
-      box-shadow: 0 28px 78px rgba(0, 0, 0, .35);
+    .paper {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border-left: 3px solid #007acc;
+      background: #f8f8f8;
     }
-
-    .publication-card img {
-      transition: transform 650ms cubic-bezier(.2, .8, .2, 1);
+    .paper a {
+      color: #007acc;
+      font-weight: bold;
+      text-decoration: none;
     }
-
-    .publication-card:hover img { transform: scale(1.07); }
-
-    .reveal { animation: reveal 700ms cubic-bezier(.2, .8, .2, 1) both; }
-    .delay-1 { animation-delay: 100ms; }
-    .delay-2 { animation-delay: 200ms; }
-    .delay-3 { animation-delay: 300ms; }
-
-    .orb { animation: float 8s ease-in-out infinite alternate; }
-
-    @keyframes reveal {
-      from { opacity: 0; transform: translateY(18px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes float {
-      from { transform: translate3d(-9px, -6px, 0); }
-      to { transform: translate3d(10px, 11px, 0); }
-    }
-
-    a:focus-visible {
-      outline: 3px solid #99dcff;
-      outline-offset: 4px;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      .reveal, .orb { animation: none; }
-      .action, .publication-card, .publication-card img { transition: none; }
+    .paper a:hover {
+      text-decoration: underline;
     }
   </style>
-  <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
-  <script src="/_sdk/85d8138ba0e9799c.resizing_sdk.js" type="text/javascript" integrity="sha512-8dt8XK3OsxyrL/A/AlNWHjY+utLvSBcXg410ejaLzAIOVGDj1jNmEYRbymhdzToKhNo0uO9dxAmMLwHQseh3Lw=="></script>
- </head>
- <body data-template-id="__page-root">
-  <div class="page-shell">
-   <header class="w-full px-5 py-5 sm:px-8 lg:px-12">
-    <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5" aria-label="Primary navigation"><a href="#top" class="flex items-center gap-3 no-underline"> <span data-template-id="brand-mark" class="canva-tag mono flex h-10 w-10 items-center justify-center rounded-lg"></span> <span data-template-id="brand-name" class="canva-text font-semibold tracking-wide"></span> </a>
-     <div class="flex flex-wrap items-center justify-end gap-x-5 gap-y-3 text-sm font-semibold"><a data-template-id="nav-profile" class="canva-link nav-link" href="#profile"></a> <a data-template-id="nav-research" class="canva-link nav-link" href="#research"></a> <a data-template-id="nav-contact" class="canva-link nav-link" href="#contact"></a> <a data-template-id="header-orcid" class="canva-button action inline-flex items-center gap-2 rounded-full px-4 py-2.5 no-underline" href="https://orcid.org/0009-0002-8110-0515" target="_blank" rel="noopener noreferrer"> <i data-lucide="badge-check" width="16" height="16" aria-hidden="true"></i> <span data-template-id="header-orcid-label" class="canva-text"></span> </a>
-     </div>
-    </nav>
-   </header>
-   <main id="top" class="w-full">
-    <section id="profile" class="w-full px-5 pb-20 pt-10 sm:px-8 sm:pt-16 lg:px-12 lg:pb-28">
-     <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.08fr_.92fr]">
-      <div>
-       <div data-template-id="availability-badge" class="canva-tag reveal inline-flex items-center gap-2 rounded-full px-3 py-1.5 mono"><span class="h-2 w-2 rounded-full bg-current"></span> <span data-template-id="availability-label" class="canva-text"></span>
-       </div>
-       <p data-template-id="hero-kicker" class="canva-text reveal delay-1 mono mt-8 uppercase tracking-[.19em]"></p>
-       <h1 data-template-id="hero-title" class="canva-text reveal delay-1 mt-4 max-w-3xl font-bold leading-[.94] tracking-[-.055em]"></h1>
-       <p data-template-id="hero-role" class="canva-text reveal delay-2 mt-6 max-w-2xl font-semibold"></p>
-       <p data-template-id="hero-summary" class="canva-text reveal delay-2 mt-5 max-w-2xl leading-8"></p>
-       <div class="reveal delay-3 mt-9 flex flex-wrap gap-3"><a data-template-id="research-button" class="canva-button action inline-flex items-center gap-2 rounded-full px-5 py-3.5 font-semibold no-underline" href="#research"> <span data-template-id="research-button-label" class="canva-text"></span> <i data-lucide="arrow-down-right" width="18" height="18" aria-hidden="true"></i> </a> <a data-template-id="arxiv-button" class="canva-button action inline-flex items-center gap-2 rounded-full border px-5 py-3.5 font-semibold no-underline" href="https://arxiv.org/search/?query=0009-0002-8110-0515&amp;searchtype=orcid&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50" target="_blank" rel="noopener noreferrer"> <i data-lucide="book-open" width="18" height="18" aria-hidden="true"></i> <span data-template-id="arxiv-button-label" class="canva-text"></span> </a>
-       </div>
-      </div>
-      <aside class="relative mx-auto w-full max-w-md lg:max-w-none" aria-label="Researcher portrait and research theme">
-       <div class="orb absolute -right-6 -top-7 h-36 w-36 rounded-full border border-sky-300/20 bg-sky-400/10"></div>
-       <div class="orb absolute -bottom-7 -left-7 h-44 w-44 rounded-full bg-cyan-300/10 blur-3xl"></div>
-       <div data-template-id="portrait-frame" class="canva-panel line-panel relative overflow-hidden rounded-[2rem] p-3">
-        <div class="relative aspect-[4/5] overflow-hidden rounded-[1.45rem]"><img data-template-id="profile-photo" loading="lazy" class="canva-image h-full w-full object-cover">
-         <div class="absolute inset-0 bg-gradient-to-t from-[#06111f] via-transparent to-transparent"></div>
-         <div class="absolute bottom-0 left-0 right-0 p-6">
-          <p data-template-id="portrait-label" class="canva-text mono uppercase tracking-[.16em]"></p>
-          <p data-template-id="portrait-value" class="canva-text mt-2 font-semibold"></p>
-         </div>
-        </div>
-       </div>
-       <div data-template-id="signal-card" class="canva-card line-panel absolute -bottom-7 -left-3 max-w-[270px] rounded-2xl p-4 sm:-left-8">
-        <div class="flex items-center gap-3"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-sky-300/15 text-sky-200"> <i data-lucide="radio-tower" width="18" height="18" aria-hidden="true"></i> </span>
-         <div>
-          <p data-template-id="signal-label" class="canva-text mono uppercase tracking-[.14em]"></p>
-          <p data-template-id="signal-value" class="canva-text mt-1 font-semibold"></p>
-         </div>
-        </div>
-       </div>
-      </aside>
-     </div>
-    </section>
-    <section data-template-id="focus-section" class="canva-section w-full border-y px-5 py-8 sm:px-8 lg:px-12">
-     <div class="mx-auto grid max-w-7xl gap-7 md:grid-cols-[.78fr_2.22fr] md:items-center">
-      <p data-template-id="focus-heading" class="canva-text mono uppercase tracking-[.18em]"></p>
-      <div class="grid gap-3 sm:grid-cols-3">
-       <article data-template-id="focus-one" class="canva-card rounded-xl px-4 py-4">
-        <p data-template-id="focus-one-title" class="canva-text font-semibold"></p>
-        <p data-template-id="focus-one-detail" class="canva-text mt-1"></p>
-       </article>
-       <article data-template-id="focus-two" class="canva-card rounded-xl px-4 py-4">
-        <p data-template-id="focus-two-title" class="canva-text font-semibold"></p>
-        <p data-template-id="focus-two-detail" class="canva-text mt-1"></p>
-       </article>
-       <article data-template-id="focus-three" class="canva-card rounded-xl px-4 py-4">
-        <p data-template-id="focus-three-title" class="canva-text font-semibold"></p>
-        <p data-template-id="focus-three-detail" class="canva-text mt-1"></p>
-       </article>
-      </div>
-     </div>
-    </section>
-    <section id="research" class="w-full px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-     <div class="mx-auto max-w-7xl">
-      <div class="max-w-3xl">
-       <p data-template-id="research-kicker" class="canva-text mono uppercase tracking-[.18em]"></p>
-       <h2 data-template-id="research-title" class="canva-text mt-4 font-bold tracking-[-.04em]"></h2>
-       <p data-template-id="research-description" class="canva-text mt-4 max-w-2xl leading-8"></p>
-      </div>
-      <div class="mt-10 grid gap-5 lg:grid-cols-2">
-       <article data-template-id="paper-one" class="canva-card publication-card line-panel overflow-hidden rounded-2xl">
-        <div class="h-52 overflow-hidden"><img data-template-id="paper-one-image" loading="lazy" class="canva-image h-full w-full object-cover">
-        </div>
-        <div class="p-6 sm:p-7">
-         <div class="flex flex-wrap items-center justify-between gap-3">
-          <p data-template-id="paper-one-meta" class="canva-text mono"></p><span data-template-id="paper-one-role" class="canva-tag rounded-full px-3 py-1 mono"></span>
-         </div>
-         <h3 data-template-id="paper-one-title" class="canva-text mt-6 font-semibold"></h3>
-         <p data-template-id="paper-one-journal" class="canva-text mt-3 mono"></p>
-         <p data-template-id="paper-one-description" class="canva-text mt-4 leading-7"></p><a data-template-id="paper-one-link" class="canva-link action mt-7 inline-flex items-center gap-2 font-semibold no-underline" href="https://academic.oup.com/mnras/article/546/4/stag236/8468848" target="_blank" rel="noopener noreferrer"> <span data-template-id="paper-one-link-label" class="canva-text"></span> <i data-lucide="arrow-up-right" width="17" height="17" aria-hidden="true"></i> </a>
-        </div>
-       </article>
-       <article data-template-id="paper-two" class="canva-card publication-card line-panel overflow-hidden rounded-2xl">
-        <div class="h-52 overflow-hidden"><img data-template-id="paper-two-image" loading="lazy" class="canva-image h-full w-full object-cover">
-        </div>
-        <div class="p-6 sm:p-7">
-         <div class="flex flex-wrap items-center justify-between gap-3">
-          <p data-template-id="paper-two-meta" class="canva-text mono"></p><span data-template-id="paper-two-role" class="canva-tag rounded-full px-3 py-1 mono"></span>
-         </div>
-         <h3 data-template-id="paper-two-title" class="canva-text mt-6 font-semibold"></h3>
-         <p data-template-id="paper-two-journal" class="canva-text mt-3 mono"></p>
-         <p data-template-id="paper-two-description" class="canva-text mt-4 leading-7"></p><a data-template-id="paper-two-link" class="canva-link action mt-7 inline-flex items-center gap-2 font-semibold no-underline" href="https://iopscience.iop.org/article/10.3847/2041-8213/ae2a20" target="_blank" rel="noopener noreferrer"> <span data-template-id="paper-two-link-label" class="canva-text"></span> <i data-lucide="arrow-up-right" width="17" height="17" aria-hidden="true"></i> </a>
-        </div>
-       </article>
-      </div>
-     </div>
-    </section>
-    <section id="contact" class="w-full px-5 pb-20 sm:px-8 lg:px-12 lg:pb-28">
-     <div data-template-id="contact-panel" class="canva-panel line-panel mx-auto max-w-7xl overflow-hidden rounded-[2rem] p-8 sm:p-12">
-      <div class="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
-       <div>
-        <p data-template-id="contact-kicker" class="canva-text mono uppercase tracking-[.18em]"></p>
-        <h2 data-template-id="contact-title" class="canva-text mt-4 max-w-2xl font-bold tracking-[-.04em]"></h2>
-        <p data-template-id="contact-description" class="canva-text mt-4 max-w-xl leading-8"></p>
-       </div>
-       <div class="flex flex-wrap gap-3"><a data-template-id="contact-email" class="canva-button action inline-flex items-center gap-2 rounded-full px-5 py-3.5 font-semibold no-underline" href="mailto:spatil@iitb.ac.in"> <i data-lucide="mail" width="18" height="18" aria-hidden="true"></i> <span data-template-id="contact-email-label" class="canva-text"></span> </a> <a data-template-id="contact-github" class="canva-button action inline-flex items-center gap-2 rounded-full border px-5 py-3.5 font-semibold no-underline" href="https://github.com/skp80286" target="_blank" rel="noopener noreferrer"> <i data-lucide="github" width="18" height="18" aria-hidden="true"></i> <span data-template-id="contact-github-label" class="canva-text"></span> </a>
-       </div>
-      </div>
-      <div class="mt-9 grid gap-3 border-t border-sky-100/10 pt-7 sm:grid-cols-3"><a data-template-id="scholar-arxiv" class="canva-card action rounded-xl px-4 py-4 no-underline" href="https://arxiv.org/search/?query=0009-0002-8110-0515&amp;searchtype=orcid&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50" target="_blank" rel="noopener noreferrer"> <p data-template-id="scholar-arxiv-title" class="canva-text mono"></p><p data-template-id="scholar-arxiv-detail" class="canva-text mt-2"></p></a> <a data-template-id="scholar-orcid" class="canva-card action rounded-xl px-4 py-4 no-underline" href="https://orcid.org/0009-0002-8110-0515" target="_blank" rel="noopener noreferrer"> <p data-template-id="scholar-orcid-title" class="canva-text mono"></p><p data-template-id="scholar-orcid-detail" class="canva-text mt-2"></p></a> <a data-template-id="scholar-ads" class="canva-card action rounded-xl px-4 py-4 no-underline" href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp..237P/abstract" target="_blank" rel="noopener noreferrer"> <p data-template-id="scholar-ads-title" class="canva-text mono"></p><p data-template-id="scholar-ads-detail" class="canva-text mt-2"></p></a>
-      </div>
-     </div>
-    </section>
-   </main>
-   <footer class="w-full border-t border-sky-100/10 px-5 py-7 sm:px-8 lg:px-12">
-    <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3">
-     <p data-template-id="footer-copy" class="canva-text"></p>
-     <p data-template-id="footer-status" class="canva-text mono"></p>
+</head>
+<body>
+  <img src="sameer-photo-cropped.png" alt="Sameer Patil">
+  <h1>Sameer K. Patil</h1>
+
+  <p>
+    I am a technologist turned astrophysicist based in Navi Mumbai, India.<br><br>
+    I am currently pursuing a PhD in Astrophysics at the <strong>Indian Institute of Technology (IIT) Bombay</strong> under the guidance of Prof. Varun Bhalerao, where I focus on high-energy transients, particularly <strong>gamma-ray bursts (GRBs)</strong>. Additionally, I collaborate with Prof. Girish Kulkarni at the <strong>Tata Institute of Fundamental Research (TIFR)</strong> on extracting intergalactic medium (IGM) properties from the 21-cm forest signal.<br><br>
+    My work heavily involves applying AI/ML techniques to solve problems in astronomy, with particular interest in deep neural networks, CNNs, U-Nets, denoising, inference, and XGBoost.<br><br>
+
+  </p>
+  
+  <div class="social">
+    <a href="https://arxiv.org/search/?query=0009-0002-8110-0515&searchtype=orcid&abstracts=show&order=-announced_date_first&size=50" title="arXiv">📚</a>
+    <a href="https://orcid.org/0009-0002-8110-0515" title="ORCID">🧬</a>
+    <a href="https://github.com/skp80286" title="GitHub">🐙</a>
+    <a href="mailto:spatil@iitb.ac.in" title="Email">✉️</a>
+    <a href="mailto:sameerkpatil@gmail.com" title="Email">✉️</a>
+
+
+  <div class="section">
+    <h2>Research</h2>
+    <div class="paper">
+      <a href="https://academic.oup.com/mnras/article/546/4/stag236/8468848" target="_blank">
+        Efficient neutral-IGM inference from noisy 21-cm forest spectra with latent-space U-Net encoding and XGBoost
+      </a><br>
+      <small>First author</small><br>
+      <small><strong>arXiv:2507.11611</strong> | July 2025</small><br>
+      <small><strong><a href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp..237P/abstract" target="_blank">ads</a></strong> | <i>MNRAS</i>, February 2026</small><br>
+      This work presents a hybrid machine learning approach using U-Net latent encoding and XGBoost to efficiently infer the neutral fraction of the IGM from noisy simulated 21-cm forest spectra. It demonstrates robust performance even in low signal-to-noise regimes, offering a practical path toward real data inference from telescopes like SKA.
     </div>
-   </footer>
+    <div class="paper">
+      <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ae2a20" target="_blank">
+        GRB 250704B: An Off-axis Short GRB with a Long-Lived Afterglow Plateau
+      </a><br>
+      <small>Coauthor</small><br>
+      <small><strong>arXiv:2509.02769</strong> | September 2025</small><br>
+      <small><strong><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ...996L..38S/abstract" target="_blank">ads</a></strong> | <i>APJL</i>, January 2026</small><br>
+      A detailed multi-wavelength afterglow study of the short GRB 250704B. Its afterglow displays an unusually long-duration plateau followed by an achromatic break and a steep decline, deviating from canonical GRB afterglows.
+      The afterglow is explained by an off-axis power-law structured jet with a narrow core, viewed at a modest angle. Our results underscore the importance of incorporating the jet structure in GRB modeling.
+    </div>
   </div>
-  <script src="/_sdk/0b5911494a4ff060.editing_sdk.js" integrity="sha512-/vyQ+jNH4Q/uooDsnMcX6o3IxIcmA7RW0TJmBR88seymBCMyLn9QjvQ8qpBP5hx5JmcAoEFUTuGK9amUMyPFpA=="></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      lucide.createIcons();
-    });
-  </script>
- </body>
+</body>
 </html>
